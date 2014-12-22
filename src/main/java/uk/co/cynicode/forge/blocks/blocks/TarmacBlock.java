@@ -1,4 +1,4 @@
-package uk.co.cynicode.forge.reference;
+package uk.co.cynicode.forge.blocks.blocks;
 /**
  * Copyright 2014 M. D. Ball (m.d.ball2@ncl.ac.uk)
  *
@@ -15,18 +15,21 @@ package uk.co.cynicode.forge.reference;
  * limitations under the License.
  */
 
+import uk.co.cynicode.forge.reference.Names;
+
 /**
- * Class Name - Blocks
- * Package - uk.co.cynicode.forge.reference
+ * Class Name - TarmacBlock
+ * Package - uk.co.cynicode.forge.blocks
  * Desc of Class - ...
  * Author(s) - M. D. Ball
  * Last Mod: 22/12/2014
  */
-public class Names {
+public class TarmacBlock extends TutorBlock {
 
-	public static class Blocks {
-		public static final String TARMAC = "tarmac";
-		public static final String TAR = "tar";
+	public TarmacBlock() {
+		super();
+		this.setBlockName(Names.Blocks.TARMAC);
+		this.setBlockTextureName(Names.Blocks.TARMAC);
 	}
 
 }

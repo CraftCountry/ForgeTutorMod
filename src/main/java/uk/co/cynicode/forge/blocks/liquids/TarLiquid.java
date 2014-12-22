@@ -1,4 +1,4 @@
-package uk.co.cynicode.forge.blocks;
+package uk.co.cynicode.forge.blocks.liquids;
 /**
  * Copyright 2014 M. D. Ball (m.d.ball2@ncl.ac.uk)
  *
@@ -15,24 +15,22 @@ package uk.co.cynicode.forge.blocks;
  * limitations under the License.
  */
 
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
 import net.minecraft.creativetab.CreativeTabs;
-import uk.co.cynicode.forge.reference.Names;
+
+import net.minecraftforge.fluids.Fluid;
 
 /**
- * Class Name - TarmacBlock
+ * Class Name - TarLiquid
  * Package - uk.co.cynicode.forge.blocks
  * Desc of Class - ...
  * Author(s) - M. D. Ball
  * Last Mod: 22/12/2014
  */
-public class TarmacBlock extends TutorBlock {
+public class TarLiquid extends TutorLiquid {
 
-	public TarmacBlock() {
-		super();
-		this.setBlockName(Names.Blocks.TARMAC);
-		this.setBlockTextureName(Names.Blocks.TARMAC);
+	public TarLiquid(Fluid f) {
+		super(f);
+		this.setCreativeTab(CreativeTabs.tabMisc);
 	}
 
 }
