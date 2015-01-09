@@ -1,4 +1,4 @@
-package uk.co.cynicode.forge.blocks.liquids;
+package uk.co.cynicode.forge.blocks.items;
 /**
  * Copyright 2014 M. D. Ball (m.d.ball2@ncl.ac.uk)
  *
@@ -15,22 +15,22 @@ package uk.co.cynicode.forge.blocks.liquids;
  * limitations under the License.
  */
 
-import net.minecraft.creativetab.CreativeTabs;
-
-import net.minecraftforge.fluids.Fluid;
+import net.minecraft.block.Block;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemBucket;
 
 /**
- * Class Name - TarLiquid
- * Package - uk.co.cynicode.forge.blocks
+ * Class Name - TarBucket
+ * Package - uk.co.cynicode.forge.blocks.items
  * Desc of Class - ...
  * Author(s) - M. D. Ball
- * Last Mod: 22/12/2014
+ * Last Mod: 27/12/2014
  */
-public class TarLiquid extends TutorLiquid {
+public class TutorBucket extends ItemBucket {
 
-	public TarLiquid(Fluid f) {
-		super(f);
-		this.setCreativeTab(CreativeTabs.tabMisc);
+	public TutorBucket(Block liquid) {
+		super(liquid);
+		super.setContainerItem(Items.bucket);
 	}
 
 }
